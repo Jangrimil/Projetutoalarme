@@ -6,4 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".sonnerie">
 
+    <Button
+        android:id="@+id/Bluetooth"
+        android:layout_width="142dp"
+        android:layout_height="91dp"
+        android:foreground="@color/teal_700"
+        android:text="On"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="259dp" />
+    <Button
+        android:id="@+id/Bluetooth"
+        android:layout_width="142dp"
+        android:layout_height="91dp"
+        android:foreground="@color/teal_700"
+        android:text="Of"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="259dp" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="188dp"
+        android:layout_height="48dp"
+        android:text="Sonnerie"
+        android:textAlignment="center"
+        android:textColor="@color/teal_700"
+        android:textSize="32dp"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

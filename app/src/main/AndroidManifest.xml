@@ -10,6 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjetTutoAlarme">
         <activity
+            android:name=".Bluetooth"
+            android:exported="false"
+            android:label="@string/title_activity_bluetooth"
+            android:theme="@style/Theme.ProjetTutoAlarme.NoActionBar" />
+        <activity
+            android:name=".video"
+            android:exported="false"
+            android:label="@string/title_activity_video"
+            android:theme="@style/Theme.ProjetTutoAlarme.NoActionBar" />
+        <activity
             android:name=".sonnerie"
             android:exported="false" />
         <activity

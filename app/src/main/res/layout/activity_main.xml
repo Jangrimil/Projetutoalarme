@@ -2,61 +2,134 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/Bluetooth"
-        android:layout_width="142dp"
-        android:layout_height="91dp"
-        android:background="@color/teal_700"
-        android:text="Bluetooth"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="259dp" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="413dp"
+        android:layout_height="167dp"
+        app:cardBackgroundColor="@color/orangepastel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="206dp">
 
-    <Button
-        android:id="@+id/sonnerie"
-        android:layout_width="142dp"
-        android:layout_height="91dp"
-        android:text="Sonnerie"
-        android:background="@color/teal_700"
-        tools:layout_editor_absoluteX="230dp"
-        tools:layout_editor_absoluteY="259dp" />
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/img" />
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="142dp"
-        android:layout_height="91dp"
-        android:text="Vidéo"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="373dp" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </androidx.cardview.widget.CardView>
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="188dp"
-        android:layout_height="48dp"
+        android:id="@+id/titre"
+        android:layout_width="180dp"
+        android:layout_height="112dp"
         android:text="AlarmeTech"
         android:textAlignment="center"
-        android:textColor="@color/teal_700"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="32dp"
-        tools:layout_editor_absoluteX="111dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="229dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="410dp"
+        android:layout_height="171dp"
+        app:cardBackgroundColor="@color/bleupastel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="373dp">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/img_1" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ViewStub
+        android:id="@+id/viewStub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout="@layout/activity_sonnerie"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="203dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="411dp"
+        android:layout_height="148dp"
+        app:cardBackgroundColor="@color/rosepastel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="544dp">
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/img_2" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="142dp"
+        android:layout_height="58dp"
+        android:text="Vidéo"
+        android:textAlignment="center"
+        android:textSize="32dp"
+        android:texteColor="@color/black"
+        tools:layout_editor_absoluteX="222dp"
+        tools:layout_editor_absoluteY="17dp" />
+
+    <androidx.constraintlayout.helper.widget.Layer
+        android:layout_width="3dp"
+        android:layout_height="6dp"
+        tools:layout_editor_absoluteX="73dp"
         tools:layout_editor_absoluteY="125dp" />
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:background="@color/purple_200"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="3dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:text="Sonnerie"
+        android:textAlignment="center"
+        android:textSize="30dp"
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="41dp"
-        android:layout_height="257dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="69dp" />
+        android:texteColor="@color/black"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="63dp" />
+
+    <TextView
+        android:layout_width="142dp"
+        android:layout_height="58dp"
+        android:text="Bluetooth"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:texteColor="@color/black"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="22dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
